@@ -1,15 +1,20 @@
 import { Navlinks } from "@/constants"
 import { styles } from "@/styles/styles"
+import Handelclickoutside from "@/utils/Handelclickoutside"
 import Image from 'next/image'
 import Link from "next/link"
 
 
 const Mobilmenu = ({showstate , chagestate}:{showstate:boolean , chagestate:() => void}) => {
+
+  
+
+  const Ref = Handelclickoutside(() => chagestate())
   return (
     <>
     {showstate && <div className='fixed top-0 left-0 w-full h-screen z-40 bg-black bg-opacity-30'>
     </div>}
-    <div className={`fixed w-64 z-50 h-screen left top-0 bg-white shadow-2xl 
+    <div ref={Ref} className={`fixed w-64 z-50 h-screen left top-0 bg-white shadow-2xl 
     py-24 px-10 duration-1000 ease-in-out ${showstate ? 'left-0' : '-left-64 '}`}>
     <div className={`${styles.flexitems}`}>
     <h2 className={`${styles.heading1} text-main mr-[107px]`}>Emprise</h2>
