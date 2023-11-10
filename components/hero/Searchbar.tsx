@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const Searchbar = () => {
   return (
-    <main className='max-w-[1328px] xl:-mt-36 mx-auto relative z-10 
+    <main className='max-w-[1328px] md:-mt-20 xl:-mt-36 mx-auto relative z-10  
     flex flex-wrap items-center justify-between gap-8
     bg-white shadow-[0px_43px_66px_0px_rgba(0,0,0,0.07)] rounded-2xl py-[50px] px-[72px]'>
         {shearchbarlinks.map(shearchbarlink => (
