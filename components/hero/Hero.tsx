@@ -1,4 +1,3 @@
-import { layout } from '@/styles/styles'
 import Dgree_payment from './Dgree_payment'
 import Searchbar from './Searchbar'
 
