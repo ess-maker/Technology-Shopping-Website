@@ -9,7 +9,7 @@ const Poppins = PoppinsFont({
 
 export const metadata: Metadata = {
   title: 'Emprise',
-  description: '',
+  description: 'travel website',
 }
 
 export default function RootLayout({
