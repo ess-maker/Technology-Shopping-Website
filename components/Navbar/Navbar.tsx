@@ -2,6 +2,7 @@ import { Navlinks } from "@/constants"
 import { styles } from "@/styles/styles"
 import Image from 'next/image'
 import Humbergarmenu from "./Humbergarmenu"
+import Link from "next/link"
 
 
 const Navbar = () => {
@@ -9,10 +10,13 @@ const Navbar = () => {
   return (
     <nav className={`h-[120px] flex items-center justify-between`}>
     <section className={`${styles.flexBetween}`}>
-    <h2 className={`text-[40px] not-italic font-semibold leading-[normal] text-main mr-[107px]`}>Emprise</h2>
-    <ul className={`${styles.flexitems} hidden lg:flex gap-[48px]`}>
+    <h2 className={`text-[40px] not-italic font-semibold leading-[normal] text-main mr-[50px] xl:mr-[107px]`}>Emprise</h2>
+    <ul className={`${styles.flexitems} hidden lg:flex gap-[28px] xl:gap-[48px]`}>
     {Navlinks.map((Navlink) => (
-    <li className={`${styles.navlink} text-main`} key={Navlink.id}>{Navlink.link}</li>
+    <Link href="#" className={`${styles.navlink} text-main hover:text-secondary`}
+     key={Navlink.id}>
+      {Navlink.link}
+      </Link >
     ))}
     <Image
       src="/shearchIcon.svg"

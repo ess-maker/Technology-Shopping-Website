@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className={`${styles.paddingx} w-full overflow-hidden`}>
+    <main className={`px-[30px] lg:px-[100px] w-full overflow-hidden`}>
     <Navbar />
     <Hero />
     </main>
