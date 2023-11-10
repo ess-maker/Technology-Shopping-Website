@@ -4,7 +4,7 @@ import { styles } from '@/styles/styles'
 
 export default function Home() {
   return (
-    <main className={`${styles.paddingx} w-full overflow-hidden`}>
+    <main className={`px-[30px] lg:px-[100px] w-full overflow-hidden`}>
     <Navbar />
     <Hero />
     </main>
