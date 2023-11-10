@@ -1,4 +1,5 @@
 export const styles = {
+    paddingx:"px-[30px] lg:px-[100px]",
 
     heading1:"text-[40px] not-italic font-semibold leading-[normal]",
     navlink:"text-xl not-italic font-medium leading-5",
